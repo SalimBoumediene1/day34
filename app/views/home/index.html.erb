@@ -1,0 +1,17 @@
+
+<img class="image-banner" src="https://cdn-images-1.medium.com/max/2000/1*g6jotLCyyrPKxoJTMvfjow.png">
+
+<%= form_for(:inscription, method: :post) do |f| %><div class="text-center" id="card-form">
+
+
+    <h5 class="">Inscritpion a la newsletter</h5>
+    <div class="field nb-5">
+        <%= f.label :email %><br />
+        <%= f.email_field(:email) %>
+    </div>
+    <div class="actions mt-5">
+        <%= f.submit "S'inscrire" %>
+    </div>
+</div>
+<% end %>
+<h1 class="text-center mt-5">The Gossip Blabla</h1>

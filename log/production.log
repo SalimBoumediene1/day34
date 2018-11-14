@@ -1,0 +1,745 @@
+I, [2018-11-14T13:00:18.545685 #5152]  INFO -- : [3284f77b-9bc9-4fe2-9802-098933b9cc1c] Started GET "/" for 127.0.0.1 at 2018-11-14 13:00:18 +0100
+I, [2018-11-14T13:00:18.548817 #5152]  INFO -- : [3284f77b-9bc9-4fe2-9802-098933b9cc1c] Processing by HomeController#index as HTML
+I, [2018-11-14T13:00:20.119278 #5152]  INFO -- : [3284f77b-9bc9-4fe2-9802-098933b9cc1c]   Rendering contact_mailer/contact.html.erb within layouts/mailer
+I, [2018-11-14T13:00:20.120243 #5152]  INFO -- : [3284f77b-9bc9-4fe2-9802-098933b9cc1c]   Rendered contact_mailer/contact.html.erb within layouts/mailer (0.7ms)
+I, [2018-11-14T13:00:20.122398 #5152]  INFO -- : [3284f77b-9bc9-4fe2-9802-098933b9cc1c]   Rendering contact_mailer/contact.text.erb within layouts/mailer
+I, [2018-11-14T13:00:20.123299 #5152]  INFO -- : [3284f77b-9bc9-4fe2-9802-098933b9cc1c]   Rendered contact_mailer/contact.text.erb within layouts/mailer (0.7ms)
+D, [2018-11-14T13:00:20.125958 #5152] DEBUG -- : [3284f77b-9bc9-4fe2-9802-098933b9cc1c] ContactMailer#contact: processed outbound mail in 32.0ms
+I, [2018-11-14T13:00:21.084708 #5152]  INFO -- : [3284f77b-9bc9-4fe2-9802-098933b9cc1c] Sent mail to salimboumediene@gmail.com (958.4ms)
+D, [2018-11-14T13:00:21.084987 #5152] DEBUG -- : [3284f77b-9bc9-4fe2-9802-098933b9cc1c] Date: Wed, 14 Nov 2018 13:00:20 +0100
+From: from@example.com
+To: salimboumediene@gmail.com
+Message-ID: <5bec0e541f39c_14202af312b741049b6@salim.mail>
+Subject: sujet de test
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5bec0e541e6ac_14202af312b741048c8";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5bec0e541e6ac_14202af312b741048c8
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour, comment allez vous aujourd'hui?=0D
+=0D
+Voici les r=C3=A9actions des potins de la semaine...=0D
+=0D
+Bon potins sur The Gossip Potins.=0D
+
+----==_mimepart_5bec0e541e6ac_14202af312b741048c8
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    
+  </body>
+</html>
+
+----==_mimepart_5bec0e541e6ac_14202af312b741048c8--
+
+I, [2018-11-14T13:00:21.086032 #5152]  INFO -- : [3284f77b-9bc9-4fe2-9802-098933b9cc1c] Completed 500 Internal Server Error in 2537ms
+F, [2018-11-14T13:00:21.088893 #5152] FATAL -- : [3284f77b-9bc9-4fe2-9802-098933b9cc1c]   
+F, [2018-11-14T13:00:21.089167 #5152] FATAL -- : [3284f77b-9bc9-4fe2-9802-098933b9cc1c] Net::SMTPAuthenticationError (534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbtr
+):
+F, [2018-11-14T13:00:21.089327 #5152] FATAL -- : [3284f77b-9bc9-4fe2-9802-098933b9cc1c]   
+F, [2018-11-14T13:00:21.089477 #5152] FATAL -- : [3284f77b-9bc9-4fe2-9802-098933b9cc1c] app/services/mail_chimp.rb:16:in `block (3 levels) in get_list'
+[3284f77b-9bc9-4fe2-9802-098933b9cc1c] app/services/mail_chimp.rb:14:in `each'
+[3284f77b-9bc9-4fe2-9802-098933b9cc1c] app/services/mail_chimp.rb:14:in `block (2 levels) in get_list'
+[3284f77b-9bc9-4fe2-9802-098933b9cc1c] app/services/mail_chimp.rb:13:in `each'
+[3284f77b-9bc9-4fe2-9802-098933b9cc1c] app/services/mail_chimp.rb:13:in `block in get_list'
+[3284f77b-9bc9-4fe2-9802-098933b9cc1c] app/services/mail_chimp.rb:11:in `each'
+[3284f77b-9bc9-4fe2-9802-098933b9cc1c] app/services/mail_chimp.rb:11:in `get_list'
+[3284f77b-9bc9-4fe2-9802-098933b9cc1c] app/controllers/home_controller.rb:4:in `index'
+I, [2018-11-14T13:00:21.161638 #5152]  INFO -- : [e07ae19d-e6dd-4c55-9266-01fdf90fc789] Started GET "/favicon.ico" for 127.0.0.1 at 2018-11-14 13:00:21 +0100
+F, [2018-11-14T13:00:21.162179 #5152] FATAL -- : [e07ae19d-e6dd-4c55-9266-01fdf90fc789]   
+F, [2018-11-14T13:00:21.162239 #5152] FATAL -- : [e07ae19d-e6dd-4c55-9266-01fdf90fc789] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2018-11-14T13:00:21.162273 #5152] FATAL -- : [e07ae19d-e6dd-4c55-9266-01fdf90fc789]   
+F, [2018-11-14T13:00:21.162314 #5152] FATAL -- : [e07ae19d-e6dd-4c55-9266-01fdf90fc789] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[e07ae19d-e6dd-4c55-9266-01fdf90fc789] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[e07ae19d-e6dd-4c55-9266-01fdf90fc789] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[e07ae19d-e6dd-4c55-9266-01fdf90fc789] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[e07ae19d-e6dd-4c55-9266-01fdf90fc789] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[e07ae19d-e6dd-4c55-9266-01fdf90fc789] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[e07ae19d-e6dd-4c55-9266-01fdf90fc789] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[e07ae19d-e6dd-4c55-9266-01fdf90fc789] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[e07ae19d-e6dd-4c55-9266-01fdf90fc789] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[e07ae19d-e6dd-4c55-9266-01fdf90fc789] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[e07ae19d-e6dd-4c55-9266-01fdf90fc789] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[e07ae19d-e6dd-4c55-9266-01fdf90fc789] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[e07ae19d-e6dd-4c55-9266-01fdf90fc789] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[e07ae19d-e6dd-4c55-9266-01fdf90fc789] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[e07ae19d-e6dd-4c55-9266-01fdf90fc789] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[e07ae19d-e6dd-4c55-9266-01fdf90fc789] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[e07ae19d-e6dd-4c55-9266-01fdf90fc789] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[e07ae19d-e6dd-4c55-9266-01fdf90fc789] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[e07ae19d-e6dd-4c55-9266-01fdf90fc789] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[e07ae19d-e6dd-4c55-9266-01fdf90fc789] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[e07ae19d-e6dd-4c55-9266-01fdf90fc789] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2018-11-14T13:54:10.478071 #5152]  INFO -- : [644a378a-5867-4415-97dd-1bae73001646] Started GET "/" for 127.0.0.1 at 2018-11-14 13:54:10 +0100
+I, [2018-11-14T13:54:10.478880 #5152]  INFO -- : [644a378a-5867-4415-97dd-1bae73001646] Processing by HomeController#index as HTML
+I, [2018-11-14T13:54:12.172813 #5152]  INFO -- : [644a378a-5867-4415-97dd-1bae73001646]   Rendering contact_mailer/contact.html.erb within layouts/mailer
+I, [2018-11-14T13:54:12.173475 #5152]  INFO -- : [644a378a-5867-4415-97dd-1bae73001646]   Rendered contact_mailer/contact.html.erb within layouts/mailer (0.2ms)
+I, [2018-11-14T13:54:12.174883 #5152]  INFO -- : [644a378a-5867-4415-97dd-1bae73001646]   Rendering contact_mailer/contact.text.erb within layouts/mailer
+I, [2018-11-14T13:54:12.175524 #5152]  INFO -- : [644a378a-5867-4415-97dd-1bae73001646]   Rendered contact_mailer/contact.text.erb within layouts/mailer (0.2ms)
+D, [2018-11-14T13:54:12.183465 #5152] DEBUG -- : [644a378a-5867-4415-97dd-1bae73001646] ContactMailer#contact: processed outbound mail in 12.2ms
+I, [2018-11-14T13:54:14.421841 #5152]  INFO -- : [644a378a-5867-4415-97dd-1bae73001646] Sent mail to salimboumediene@gmail.com (2237.8ms)
+D, [2018-11-14T13:54:14.422172 #5152] DEBUG -- : [644a378a-5867-4415-97dd-1bae73001646] Date: Wed, 14 Nov 2018 13:54:12 +0100
+From: from@example.com
+To: salimboumediene@gmail.com
+Message-ID: <5bec1af42de0e_14202af312b74028112b@salim.mail>
+Subject: sujet de test
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5bec1af42b688_14202af312b74028107c";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5bec1af42b688_14202af312b74028107c
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour, comment allez vous aujourd'hui?=0D
+=0D
+Voici les r=C3=A9actions des potins de la semaine...=0D
+=0D
+Bon potins sur The Gossip Potins.=0D
+
+----==_mimepart_5bec1af42b688_14202af312b74028107c
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    
+  </body>
+</html>
+
+----==_mimepart_5bec1af42b688_14202af312b74028107c--
+
+I, [2018-11-14T13:54:14.422950 #5152]  INFO -- : [644a378a-5867-4415-97dd-1bae73001646] Completed 500 Internal Server Error in 3944ms
+F, [2018-11-14T13:54:14.426595 #5152] FATAL -- : [644a378a-5867-4415-97dd-1bae73001646]   
+F, [2018-11-14T13:54:14.426929 #5152] FATAL -- : [644a378a-5867-4415-97dd-1bae73001646] Net::SMTPAuthenticationError (534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbsP
+):
+F, [2018-11-14T13:54:14.427128 #5152] FATAL -- : [644a378a-5867-4415-97dd-1bae73001646]   
+F, [2018-11-14T13:54:14.427360 #5152] FATAL -- : [644a378a-5867-4415-97dd-1bae73001646] app/services/mail_chimp.rb:16:in `block (3 levels) in get_list'
+[644a378a-5867-4415-97dd-1bae73001646] app/services/mail_chimp.rb:14:in `each'
+[644a378a-5867-4415-97dd-1bae73001646] app/services/mail_chimp.rb:14:in `block (2 levels) in get_list'
+[644a378a-5867-4415-97dd-1bae73001646] app/services/mail_chimp.rb:13:in `each'
+[644a378a-5867-4415-97dd-1bae73001646] app/services/mail_chimp.rb:13:in `block in get_list'
+[644a378a-5867-4415-97dd-1bae73001646] app/services/mail_chimp.rb:11:in `each'
+[644a378a-5867-4415-97dd-1bae73001646] app/services/mail_chimp.rb:11:in `get_list'
+[644a378a-5867-4415-97dd-1bae73001646] app/controllers/home_controller.rb:4:in `index'
+I, [2018-11-14T13:54:14.796114 #5152]  INFO -- : [02b51904-70c0-4431-a48a-3b01055e8e68] Started GET "/favicon.ico" for 127.0.0.1 at 2018-11-14 13:54:14 +0100
+F, [2018-11-14T13:54:14.797069 #5152] FATAL -- : [02b51904-70c0-4431-a48a-3b01055e8e68]   
+F, [2018-11-14T13:54:14.797175 #5152] FATAL -- : [02b51904-70c0-4431-a48a-3b01055e8e68] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2018-11-14T13:54:14.797223 #5152] FATAL -- : [02b51904-70c0-4431-a48a-3b01055e8e68]   
+F, [2018-11-14T13:54:14.797282 #5152] FATAL -- : [02b51904-70c0-4431-a48a-3b01055e8e68] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[02b51904-70c0-4431-a48a-3b01055e8e68] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[02b51904-70c0-4431-a48a-3b01055e8e68] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[02b51904-70c0-4431-a48a-3b01055e8e68] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[02b51904-70c0-4431-a48a-3b01055e8e68] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[02b51904-70c0-4431-a48a-3b01055e8e68] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[02b51904-70c0-4431-a48a-3b01055e8e68] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[02b51904-70c0-4431-a48a-3b01055e8e68] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[02b51904-70c0-4431-a48a-3b01055e8e68] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[02b51904-70c0-4431-a48a-3b01055e8e68] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[02b51904-70c0-4431-a48a-3b01055e8e68] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[02b51904-70c0-4431-a48a-3b01055e8e68] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[02b51904-70c0-4431-a48a-3b01055e8e68] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[02b51904-70c0-4431-a48a-3b01055e8e68] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[02b51904-70c0-4431-a48a-3b01055e8e68] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[02b51904-70c0-4431-a48a-3b01055e8e68] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[02b51904-70c0-4431-a48a-3b01055e8e68] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[02b51904-70c0-4431-a48a-3b01055e8e68] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[02b51904-70c0-4431-a48a-3b01055e8e68] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[02b51904-70c0-4431-a48a-3b01055e8e68] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[02b51904-70c0-4431-a48a-3b01055e8e68] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2018-11-14T13:54:34.122544 #5152]  INFO -- : [6f0629c0-9fd0-4490-8968-bccef33795f3] Started GET "/" for 127.0.0.1 at 2018-11-14 13:54:34 +0100
+I, [2018-11-14T13:54:34.123462 #5152]  INFO -- : [6f0629c0-9fd0-4490-8968-bccef33795f3] Processing by HomeController#index as HTML
+I, [2018-11-14T13:54:35.331581 #5152]  INFO -- : [6f0629c0-9fd0-4490-8968-bccef33795f3]   Rendering contact_mailer/contact.html.erb within layouts/mailer
+I, [2018-11-14T13:54:35.331868 #5152]  INFO -- : [6f0629c0-9fd0-4490-8968-bccef33795f3]   Rendered contact_mailer/contact.html.erb within layouts/mailer (0.1ms)
+I, [2018-11-14T13:54:35.332449 #5152]  INFO -- : [6f0629c0-9fd0-4490-8968-bccef33795f3]   Rendering contact_mailer/contact.text.erb within layouts/mailer
+I, [2018-11-14T13:54:35.332811 #5152]  INFO -- : [6f0629c0-9fd0-4490-8968-bccef33795f3]   Rendered contact_mailer/contact.text.erb within layouts/mailer (0.1ms)
+D, [2018-11-14T13:54:35.335854 #5152] DEBUG -- : [6f0629c0-9fd0-4490-8968-bccef33795f3] ContactMailer#contact: processed outbound mail in 5.2ms
+I, [2018-11-14T13:54:37.359428 #5152]  INFO -- : [6f0629c0-9fd0-4490-8968-bccef33795f3] Sent mail to salimboumediene@gmail.com (2023.3ms)
+D, [2018-11-14T13:54:37.359702 #5152] DEBUG -- : [6f0629c0-9fd0-4490-8968-bccef33795f3] Date: Wed, 14 Nov 2018 13:54:35 +0100
+From: from@example.com
+To: salimboumediene@gmail.com
+Message-ID: <5bec1b0b52596_14202af312b69efc13f6@salim.mail>
+Subject: sujet de test
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5bec1b0b51832_14202af312b69efc12bd";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5bec1b0b51832_14202af312b69efc12bd
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour, comment allez vous aujourd'hui?=0D
+=0D
+Voici les r=C3=A9actions des potins de la semaine...=0D
+=0D
+Bon potins sur The Gossip Potins.=0D
+
+----==_mimepart_5bec1b0b51832_14202af312b69efc12bd
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    
+  </body>
+</html>
+
+----==_mimepart_5bec1b0b51832_14202af312b69efc12bd--
+
+I, [2018-11-14T13:54:37.360390 #5152]  INFO -- : [6f0629c0-9fd0-4490-8968-bccef33795f3] Completed 500 Internal Server Error in 3237ms
+F, [2018-11-14T13:54:37.363649 #5152] FATAL -- : [6f0629c0-9fd0-4490-8968-bccef33795f3]   
+F, [2018-11-14T13:54:37.363914 #5152] FATAL -- : [6f0629c0-9fd0-4490-8968-bccef33795f3] Net::SMTPAuthenticationError (534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbuk
+):
+F, [2018-11-14T13:54:37.364097 #5152] FATAL -- : [6f0629c0-9fd0-4490-8968-bccef33795f3]   
+F, [2018-11-14T13:54:37.364288 #5152] FATAL -- : [6f0629c0-9fd0-4490-8968-bccef33795f3] app/services/mail_chimp.rb:16:in `block (3 levels) in get_list'
+[6f0629c0-9fd0-4490-8968-bccef33795f3] app/services/mail_chimp.rb:14:in `each'
+[6f0629c0-9fd0-4490-8968-bccef33795f3] app/services/mail_chimp.rb:14:in `block (2 levels) in get_list'
+[6f0629c0-9fd0-4490-8968-bccef33795f3] app/services/mail_chimp.rb:13:in `each'
+[6f0629c0-9fd0-4490-8968-bccef33795f3] app/services/mail_chimp.rb:13:in `block in get_list'
+[6f0629c0-9fd0-4490-8968-bccef33795f3] app/services/mail_chimp.rb:11:in `each'
+[6f0629c0-9fd0-4490-8968-bccef33795f3] app/services/mail_chimp.rb:11:in `get_list'
+[6f0629c0-9fd0-4490-8968-bccef33795f3] app/controllers/home_controller.rb:4:in `index'
+I, [2018-11-14T13:54:37.431086 #5152]  INFO -- : [af512247-3c6b-4417-a298-e519888636db] Started GET "/favicon.ico" for 127.0.0.1 at 2018-11-14 13:54:37 +0100
+F, [2018-11-14T13:54:37.431818 #5152] FATAL -- : [af512247-3c6b-4417-a298-e519888636db]   
+F, [2018-11-14T13:54:37.431896 #5152] FATAL -- : [af512247-3c6b-4417-a298-e519888636db] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2018-11-14T13:54:37.431918 #5152] FATAL -- : [af512247-3c6b-4417-a298-e519888636db]   
+F, [2018-11-14T13:54:37.432110 #5152] FATAL -- : [af512247-3c6b-4417-a298-e519888636db] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[af512247-3c6b-4417-a298-e519888636db] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[af512247-3c6b-4417-a298-e519888636db] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[af512247-3c6b-4417-a298-e519888636db] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[af512247-3c6b-4417-a298-e519888636db] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[af512247-3c6b-4417-a298-e519888636db] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[af512247-3c6b-4417-a298-e519888636db] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[af512247-3c6b-4417-a298-e519888636db] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[af512247-3c6b-4417-a298-e519888636db] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[af512247-3c6b-4417-a298-e519888636db] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[af512247-3c6b-4417-a298-e519888636db] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[af512247-3c6b-4417-a298-e519888636db] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[af512247-3c6b-4417-a298-e519888636db] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[af512247-3c6b-4417-a298-e519888636db] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[af512247-3c6b-4417-a298-e519888636db] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[af512247-3c6b-4417-a298-e519888636db] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[af512247-3c6b-4417-a298-e519888636db] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[af512247-3c6b-4417-a298-e519888636db] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[af512247-3c6b-4417-a298-e519888636db] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[af512247-3c6b-4417-a298-e519888636db] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[af512247-3c6b-4417-a298-e519888636db] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2018-11-14T13:55:01.063712 #5152]  INFO -- : [67fe00ff-2c4a-4c36-9480-9f084f8b3ae9] Started GET "/favicon.ico" for 127.0.0.1 at 2018-11-14 13:55:01 +0100
+F, [2018-11-14T13:55:01.064187 #5152] FATAL -- : [67fe00ff-2c4a-4c36-9480-9f084f8b3ae9]   
+F, [2018-11-14T13:55:01.064234 #5152] FATAL -- : [67fe00ff-2c4a-4c36-9480-9f084f8b3ae9] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2018-11-14T13:55:01.064254 #5152] FATAL -- : [67fe00ff-2c4a-4c36-9480-9f084f8b3ae9]   
+F, [2018-11-14T13:55:01.064278 #5152] FATAL -- : [67fe00ff-2c4a-4c36-9480-9f084f8b3ae9] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[67fe00ff-2c4a-4c36-9480-9f084f8b3ae9] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[67fe00ff-2c4a-4c36-9480-9f084f8b3ae9] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[67fe00ff-2c4a-4c36-9480-9f084f8b3ae9] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[67fe00ff-2c4a-4c36-9480-9f084f8b3ae9] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[67fe00ff-2c4a-4c36-9480-9f084f8b3ae9] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[67fe00ff-2c4a-4c36-9480-9f084f8b3ae9] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[67fe00ff-2c4a-4c36-9480-9f084f8b3ae9] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[67fe00ff-2c4a-4c36-9480-9f084f8b3ae9] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[67fe00ff-2c4a-4c36-9480-9f084f8b3ae9] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[67fe00ff-2c4a-4c36-9480-9f084f8b3ae9] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[67fe00ff-2c4a-4c36-9480-9f084f8b3ae9] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[67fe00ff-2c4a-4c36-9480-9f084f8b3ae9] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[67fe00ff-2c4a-4c36-9480-9f084f8b3ae9] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[67fe00ff-2c4a-4c36-9480-9f084f8b3ae9] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[67fe00ff-2c4a-4c36-9480-9f084f8b3ae9] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[67fe00ff-2c4a-4c36-9480-9f084f8b3ae9] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[67fe00ff-2c4a-4c36-9480-9f084f8b3ae9] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[67fe00ff-2c4a-4c36-9480-9f084f8b3ae9] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[67fe00ff-2c4a-4c36-9480-9f084f8b3ae9] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[67fe00ff-2c4a-4c36-9480-9f084f8b3ae9] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2018-11-14T13:55:02.262780 #5152]  INFO -- : [5b0ef57c-7b4c-432a-bcdb-df3e55551202] Started GET "/" for 127.0.0.1 at 2018-11-14 13:55:02 +0100
+I, [2018-11-14T13:55:02.264103 #5152]  INFO -- : [5b0ef57c-7b4c-432a-bcdb-df3e55551202] Processing by HomeController#index as HTML
+I, [2018-11-14T13:55:04.197414 #5152]  INFO -- : [5b0ef57c-7b4c-432a-bcdb-df3e55551202]   Rendering contact_mailer/contact.html.erb within layouts/mailer
+I, [2018-11-14T13:55:04.198108 #5152]  INFO -- : [5b0ef57c-7b4c-432a-bcdb-df3e55551202]   Rendered contact_mailer/contact.html.erb within layouts/mailer (0.3ms)
+I, [2018-11-14T13:55:04.199084 #5152]  INFO -- : [5b0ef57c-7b4c-432a-bcdb-df3e55551202]   Rendering contact_mailer/contact.text.erb within layouts/mailer
+I, [2018-11-14T13:55:04.199510 #5152]  INFO -- : [5b0ef57c-7b4c-432a-bcdb-df3e55551202]   Rendered contact_mailer/contact.text.erb within layouts/mailer (0.1ms)
+D, [2018-11-14T13:55:04.208945 #5152] DEBUG -- : [5b0ef57c-7b4c-432a-bcdb-df3e55551202] ContactMailer#contact: processed outbound mail in 13.5ms
+I, [2018-11-14T13:55:07.089192 #5152]  INFO -- : [5b0ef57c-7b4c-432a-bcdb-df3e55551202] Sent mail to salimboumediene@gmail.com (2879.8ms)
+D, [2018-11-14T13:55:07.089464 #5152] DEBUG -- : [5b0ef57c-7b4c-432a-bcdb-df3e55551202] Date: Wed, 14 Nov 2018 13:55:04 +0100
+From: from@example.com
+To: salimboumediene@gmail.com
+Message-ID: <5bec1b283438f_14202af312b7410415aa@salim.mail>
+Subject: sujet de test
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5bec1b283132e_14202af312b741041425";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5bec1b283132e_14202af312b741041425
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour, comment allez vous aujourd'hui?=0D
+=0D
+Voici les r=C3=A9actions des potins de la semaine...=0D
+=0D
+Bon potins sur The Gossip Potins.=0D
+
+----==_mimepart_5bec1b283132e_14202af312b741041425
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    
+  </body>
+</html>
+
+----==_mimepart_5bec1b283132e_14202af312b741041425--
+
+I, [2018-11-14T13:55:07.090003 #5152]  INFO -- : [5b0ef57c-7b4c-432a-bcdb-df3e55551202] Completed 500 Internal Server Error in 4826ms
+F, [2018-11-14T13:55:07.092713 #5152] FATAL -- : [5b0ef57c-7b4c-432a-bcdb-df3e55551202]   
+F, [2018-11-14T13:55:07.092953 #5152] FATAL -- : [5b0ef57c-7b4c-432a-bcdb-df3e55551202] Net::SMTPAuthenticationError (534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbuW
+):
+F, [2018-11-14T13:55:07.093090 #5152] FATAL -- : [5b0ef57c-7b4c-432a-bcdb-df3e55551202]   
+F, [2018-11-14T13:55:07.093198 #5152] FATAL -- : [5b0ef57c-7b4c-432a-bcdb-df3e55551202] app/services/mail_chimp.rb:16:in `block (3 levels) in get_list'
+[5b0ef57c-7b4c-432a-bcdb-df3e55551202] app/services/mail_chimp.rb:14:in `each'
+[5b0ef57c-7b4c-432a-bcdb-df3e55551202] app/services/mail_chimp.rb:14:in `block (2 levels) in get_list'
+[5b0ef57c-7b4c-432a-bcdb-df3e55551202] app/services/mail_chimp.rb:13:in `each'
+[5b0ef57c-7b4c-432a-bcdb-df3e55551202] app/services/mail_chimp.rb:13:in `block in get_list'
+[5b0ef57c-7b4c-432a-bcdb-df3e55551202] app/services/mail_chimp.rb:11:in `each'
+[5b0ef57c-7b4c-432a-bcdb-df3e55551202] app/services/mail_chimp.rb:11:in `get_list'
+[5b0ef57c-7b4c-432a-bcdb-df3e55551202] app/controllers/home_controller.rb:4:in `index'
+I, [2018-11-14T13:55:07.164455 #5152]  INFO -- : [aa146033-6aca-4dad-ac0b-2595a1301325] Started GET "/favicon.ico" for 127.0.0.1 at 2018-11-14 13:55:07 +0100
+F, [2018-11-14T13:55:07.165233 #5152] FATAL -- : [aa146033-6aca-4dad-ac0b-2595a1301325]   
+F, [2018-11-14T13:55:07.165337 #5152] FATAL -- : [aa146033-6aca-4dad-ac0b-2595a1301325] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2018-11-14T13:55:07.165375 #5152] FATAL -- : [aa146033-6aca-4dad-ac0b-2595a1301325]   
+F, [2018-11-14T13:55:07.165420 #5152] FATAL -- : [aa146033-6aca-4dad-ac0b-2595a1301325] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[aa146033-6aca-4dad-ac0b-2595a1301325] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[aa146033-6aca-4dad-ac0b-2595a1301325] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[aa146033-6aca-4dad-ac0b-2595a1301325] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[aa146033-6aca-4dad-ac0b-2595a1301325] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[aa146033-6aca-4dad-ac0b-2595a1301325] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[aa146033-6aca-4dad-ac0b-2595a1301325] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[aa146033-6aca-4dad-ac0b-2595a1301325] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[aa146033-6aca-4dad-ac0b-2595a1301325] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[aa146033-6aca-4dad-ac0b-2595a1301325] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[aa146033-6aca-4dad-ac0b-2595a1301325] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[aa146033-6aca-4dad-ac0b-2595a1301325] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[aa146033-6aca-4dad-ac0b-2595a1301325] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[aa146033-6aca-4dad-ac0b-2595a1301325] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[aa146033-6aca-4dad-ac0b-2595a1301325] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[aa146033-6aca-4dad-ac0b-2595a1301325] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[aa146033-6aca-4dad-ac0b-2595a1301325] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[aa146033-6aca-4dad-ac0b-2595a1301325] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[aa146033-6aca-4dad-ac0b-2595a1301325] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[aa146033-6aca-4dad-ac0b-2595a1301325] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[aa146033-6aca-4dad-ac0b-2595a1301325] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2018-11-14T13:55:30.254156 #5152]  INFO -- : [0c5cd815-ed57-463a-984c-c6fc48ac17e3] Started GET "/" for 127.0.0.1 at 2018-11-14 13:55:30 +0100
+I, [2018-11-14T13:55:30.255043 #5152]  INFO -- : [0c5cd815-ed57-463a-984c-c6fc48ac17e3] Processing by HomeController#index as HTML
+I, [2018-11-14T13:55:31.633559 #5152]  INFO -- : [0c5cd815-ed57-463a-984c-c6fc48ac17e3]   Rendering contact_mailer/contact.html.erb within layouts/mailer
+I, [2018-11-14T13:55:31.634122 #5152]  INFO -- : [0c5cd815-ed57-463a-984c-c6fc48ac17e3]   Rendered contact_mailer/contact.html.erb within layouts/mailer (0.1ms)
+I, [2018-11-14T13:55:31.635465 #5152]  INFO -- : [0c5cd815-ed57-463a-984c-c6fc48ac17e3]   Rendering contact_mailer/contact.text.erb within layouts/mailer
+I, [2018-11-14T13:55:31.635954 #5152]  INFO -- : [0c5cd815-ed57-463a-984c-c6fc48ac17e3]   Rendered contact_mailer/contact.text.erb within layouts/mailer (0.1ms)
+D, [2018-11-14T13:55:31.643725 #5152] DEBUG -- : [0c5cd815-ed57-463a-984c-c6fc48ac17e3] ContactMailer#contact: processed outbound mail in 11.6ms
+I, [2018-11-14T13:55:33.264133 #5152]  INFO -- : [0c5cd815-ed57-463a-984c-c6fc48ac17e3] Sent mail to salimboumediene@gmail.com (1619.9ms)
+D, [2018-11-14T13:55:33.264639 #5152] DEBUG -- : [0c5cd815-ed57-463a-984c-c6fc48ac17e3] Date: Wed, 14 Nov 2018 13:55:31 +0100
+From: from@example.com
+To: salimboumediene@gmail.com
+Message-ID: <5bec1b439e7e2_14202af312b7402817ba@salim.mail>
+Subject: sujet de test
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5bec1b439bc39_14202af312b740281611";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5bec1b439bc39_14202af312b740281611
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour, comment allez vous aujourd'hui?=0D
+=0D
+Voici les r=C3=A9actions des potins de la semaine...=0D
+=0D
+Bon potins sur The Gossip Potins.=0D
+
+----==_mimepart_5bec1b439bc39_14202af312b740281611
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    
+  </body>
+</html>
+
+----==_mimepart_5bec1b439bc39_14202af312b740281611--
+
+I, [2018-11-14T13:55:33.265323 #5152]  INFO -- : [0c5cd815-ed57-463a-984c-c6fc48ac17e3] Completed 500 Internal Server Error in 3010ms
+F, [2018-11-14T13:55:33.267402 #5152] FATAL -- : [0c5cd815-ed57-463a-984c-c6fc48ac17e3]   
+F, [2018-11-14T13:55:33.267615 #5152] FATAL -- : [0c5cd815-ed57-463a-984c-c6fc48ac17e3] Net::SMTPAuthenticationError (534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbsW
+):
+F, [2018-11-14T13:55:33.267723 #5152] FATAL -- : [0c5cd815-ed57-463a-984c-c6fc48ac17e3]   
+F, [2018-11-14T13:55:33.267834 #5152] FATAL -- : [0c5cd815-ed57-463a-984c-c6fc48ac17e3] app/services/mail_chimp.rb:16:in `block (3 levels) in get_list'
+[0c5cd815-ed57-463a-984c-c6fc48ac17e3] app/services/mail_chimp.rb:14:in `each'
+[0c5cd815-ed57-463a-984c-c6fc48ac17e3] app/services/mail_chimp.rb:14:in `block (2 levels) in get_list'
+[0c5cd815-ed57-463a-984c-c6fc48ac17e3] app/services/mail_chimp.rb:13:in `each'
+[0c5cd815-ed57-463a-984c-c6fc48ac17e3] app/services/mail_chimp.rb:13:in `block in get_list'
+[0c5cd815-ed57-463a-984c-c6fc48ac17e3] app/services/mail_chimp.rb:11:in `each'
+[0c5cd815-ed57-463a-984c-c6fc48ac17e3] app/services/mail_chimp.rb:11:in `get_list'
+[0c5cd815-ed57-463a-984c-c6fc48ac17e3] app/controllers/home_controller.rb:4:in `index'
+I, [2018-11-14T13:55:33.327668 #5152]  INFO -- : [429a3e7d-b2a8-448d-8d2a-5c7cc5f3025c] Started GET "/favicon.ico" for 127.0.0.1 at 2018-11-14 13:55:33 +0100
+F, [2018-11-14T13:55:33.328257 #5152] FATAL -- : [429a3e7d-b2a8-448d-8d2a-5c7cc5f3025c]   
+F, [2018-11-14T13:55:33.328332 #5152] FATAL -- : [429a3e7d-b2a8-448d-8d2a-5c7cc5f3025c] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2018-11-14T13:55:33.328365 #5152] FATAL -- : [429a3e7d-b2a8-448d-8d2a-5c7cc5f3025c]   
+F, [2018-11-14T13:55:33.328402 #5152] FATAL -- : [429a3e7d-b2a8-448d-8d2a-5c7cc5f3025c] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[429a3e7d-b2a8-448d-8d2a-5c7cc5f3025c] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[429a3e7d-b2a8-448d-8d2a-5c7cc5f3025c] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[429a3e7d-b2a8-448d-8d2a-5c7cc5f3025c] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[429a3e7d-b2a8-448d-8d2a-5c7cc5f3025c] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[429a3e7d-b2a8-448d-8d2a-5c7cc5f3025c] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[429a3e7d-b2a8-448d-8d2a-5c7cc5f3025c] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[429a3e7d-b2a8-448d-8d2a-5c7cc5f3025c] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[429a3e7d-b2a8-448d-8d2a-5c7cc5f3025c] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[429a3e7d-b2a8-448d-8d2a-5c7cc5f3025c] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[429a3e7d-b2a8-448d-8d2a-5c7cc5f3025c] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[429a3e7d-b2a8-448d-8d2a-5c7cc5f3025c] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[429a3e7d-b2a8-448d-8d2a-5c7cc5f3025c] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[429a3e7d-b2a8-448d-8d2a-5c7cc5f3025c] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[429a3e7d-b2a8-448d-8d2a-5c7cc5f3025c] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[429a3e7d-b2a8-448d-8d2a-5c7cc5f3025c] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[429a3e7d-b2a8-448d-8d2a-5c7cc5f3025c] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[429a3e7d-b2a8-448d-8d2a-5c7cc5f3025c] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[429a3e7d-b2a8-448d-8d2a-5c7cc5f3025c] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[429a3e7d-b2a8-448d-8d2a-5c7cc5f3025c] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[429a3e7d-b2a8-448d-8d2a-5c7cc5f3025c] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2018-11-14T13:56:34.755173 #5152]  INFO -- : [a51f1e99-b399-4d41-a758-11baa301e064] Started GET "/" for 127.0.0.1 at 2018-11-14 13:56:34 +0100
+I, [2018-11-14T13:56:34.756549 #5152]  INFO -- : [a51f1e99-b399-4d41-a758-11baa301e064] Processing by HomeController#index as HTML
+I, [2018-11-14T13:56:36.203556 #5152]  INFO -- : [a51f1e99-b399-4d41-a758-11baa301e064]   Rendering contact_mailer/contact.html.erb within layouts/mailer
+I, [2018-11-14T13:56:36.204219 #5152]  INFO -- : [a51f1e99-b399-4d41-a758-11baa301e064]   Rendered contact_mailer/contact.html.erb within layouts/mailer (0.1ms)
+I, [2018-11-14T13:56:36.205625 #5152]  INFO -- : [a51f1e99-b399-4d41-a758-11baa301e064]   Rendering contact_mailer/contact.text.erb within layouts/mailer
+I, [2018-11-14T13:56:36.206223 #5152]  INFO -- : [a51f1e99-b399-4d41-a758-11baa301e064]   Rendered contact_mailer/contact.text.erb within layouts/mailer (0.1ms)
+D, [2018-11-14T13:56:36.213487 #5152] DEBUG -- : [a51f1e99-b399-4d41-a758-11baa301e064] ContactMailer#contact: processed outbound mail in 11.4ms
+I, [2018-11-14T13:56:38.408756 #5152]  INFO -- : [a51f1e99-b399-4d41-a758-11baa301e064] Sent mail to salimboumediene@gmail.com (2194.6ms)
+D, [2018-11-14T13:56:38.409112 #5152] DEBUG -- : [a51f1e99-b399-4d41-a758-11baa301e064] Date: Wed, 14 Nov 2018 13:56:36 +0100
+From: from@example.com
+To: salimboumediene@gmail.com
+Message-ID: <5bec1b84359bb_14202af312b69efc19ad@salim.mail>
+Subject: sujet de test
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5bec1b8432d72_14202af312b69efc18b1";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5bec1b8432d72_14202af312b69efc18b1
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour, comment allez vous aujourd'hui?=0D
+=0D
+Voici les r=C3=A9actions des potins de la semaine...=0D
+=0D
+Bon potins sur The Gossip Potins.=0D
+
+----==_mimepart_5bec1b8432d72_14202af312b69efc18b1
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    
+  </body>
+</html>
+
+----==_mimepart_5bec1b8432d72_14202af312b69efc18b1--
+
+I, [2018-11-14T13:56:38.410273 #5152]  INFO -- : [a51f1e99-b399-4d41-a758-11baa301e064] Completed 500 Internal Server Error in 3653ms
+F, [2018-11-14T13:56:38.414280 #5152] FATAL -- : [a51f1e99-b399-4d41-a758-11baa301e064]   
+F, [2018-11-14T13:56:38.414557 #5152] FATAL -- : [a51f1e99-b399-4d41-a758-11baa301e064] Net::SMTPAuthenticationError (534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbu3
+):
+F, [2018-11-14T13:56:38.414691 #5152] FATAL -- : [a51f1e99-b399-4d41-a758-11baa301e064]   
+F, [2018-11-14T13:56:38.414817 #5152] FATAL -- : [a51f1e99-b399-4d41-a758-11baa301e064] app/services/mail_chimp.rb:16:in `block (3 levels) in get_list'
+[a51f1e99-b399-4d41-a758-11baa301e064] app/services/mail_chimp.rb:14:in `each'
+[a51f1e99-b399-4d41-a758-11baa301e064] app/services/mail_chimp.rb:14:in `block (2 levels) in get_list'
+[a51f1e99-b399-4d41-a758-11baa301e064] app/services/mail_chimp.rb:13:in `each'
+[a51f1e99-b399-4d41-a758-11baa301e064] app/services/mail_chimp.rb:13:in `block in get_list'
+[a51f1e99-b399-4d41-a758-11baa301e064] app/services/mail_chimp.rb:11:in `each'
+[a51f1e99-b399-4d41-a758-11baa301e064] app/services/mail_chimp.rb:11:in `get_list'
+[a51f1e99-b399-4d41-a758-11baa301e064] app/controllers/home_controller.rb:4:in `index'
+I, [2018-11-14T13:56:38.532467 #5152]  INFO -- : [ddfc1b3a-8c0b-40f0-8204-587d60f9f317] Started GET "/favicon.ico" for 127.0.0.1 at 2018-11-14 13:56:38 +0100
+F, [2018-11-14T13:56:38.533255 #5152] FATAL -- : [ddfc1b3a-8c0b-40f0-8204-587d60f9f317]   
+F, [2018-11-14T13:56:38.533350 #5152] FATAL -- : [ddfc1b3a-8c0b-40f0-8204-587d60f9f317] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2018-11-14T13:56:38.533388 #5152] FATAL -- : [ddfc1b3a-8c0b-40f0-8204-587d60f9f317]   
+F, [2018-11-14T13:56:38.533451 #5152] FATAL -- : [ddfc1b3a-8c0b-40f0-8204-587d60f9f317] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[ddfc1b3a-8c0b-40f0-8204-587d60f9f317] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[ddfc1b3a-8c0b-40f0-8204-587d60f9f317] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[ddfc1b3a-8c0b-40f0-8204-587d60f9f317] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[ddfc1b3a-8c0b-40f0-8204-587d60f9f317] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[ddfc1b3a-8c0b-40f0-8204-587d60f9f317] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[ddfc1b3a-8c0b-40f0-8204-587d60f9f317] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[ddfc1b3a-8c0b-40f0-8204-587d60f9f317] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[ddfc1b3a-8c0b-40f0-8204-587d60f9f317] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[ddfc1b3a-8c0b-40f0-8204-587d60f9f317] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[ddfc1b3a-8c0b-40f0-8204-587d60f9f317] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[ddfc1b3a-8c0b-40f0-8204-587d60f9f317] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[ddfc1b3a-8c0b-40f0-8204-587d60f9f317] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[ddfc1b3a-8c0b-40f0-8204-587d60f9f317] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[ddfc1b3a-8c0b-40f0-8204-587d60f9f317] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[ddfc1b3a-8c0b-40f0-8204-587d60f9f317] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[ddfc1b3a-8c0b-40f0-8204-587d60f9f317] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[ddfc1b3a-8c0b-40f0-8204-587d60f9f317] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[ddfc1b3a-8c0b-40f0-8204-587d60f9f317] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[ddfc1b3a-8c0b-40f0-8204-587d60f9f317] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[ddfc1b3a-8c0b-40f0-8204-587d60f9f317] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2018-11-14T13:58:09.008539 #5152]  INFO -- : [23e405c4-3dc6-4085-92b8-f271dc5b6980] Started GET "/" for 127.0.0.1 at 2018-11-14 13:58:09 +0100
+I, [2018-11-14T13:58:09.009499 #5152]  INFO -- : [23e405c4-3dc6-4085-92b8-f271dc5b6980] Processing by HomeController#index as HTML
+I, [2018-11-14T13:58:10.153325 #5152]  INFO -- : [23e405c4-3dc6-4085-92b8-f271dc5b6980]   Rendering contact_mailer/contact.html.erb within layouts/mailer
+I, [2018-11-14T13:58:10.153850 #5152]  INFO -- : [23e405c4-3dc6-4085-92b8-f271dc5b6980]   Rendered contact_mailer/contact.html.erb within layouts/mailer (0.1ms)
+I, [2018-11-14T13:58:10.154669 #5152]  INFO -- : [23e405c4-3dc6-4085-92b8-f271dc5b6980]   Rendering contact_mailer/contact.text.erb within layouts/mailer
+I, [2018-11-14T13:58:10.154991 #5152]  INFO -- : [23e405c4-3dc6-4085-92b8-f271dc5b6980]   Rendered contact_mailer/contact.text.erb within layouts/mailer (0.1ms)
+D, [2018-11-14T13:58:10.164402 #5152] DEBUG -- : [23e405c4-3dc6-4085-92b8-f271dc5b6980] ContactMailer#contact: processed outbound mail in 13.7ms
+I, [2018-11-14T13:58:11.983566 #5152]  INFO -- : [23e405c4-3dc6-4085-92b8-f271dc5b6980] Sent mail to salimboumediene@gmail.com (1818.6ms)
+D, [2018-11-14T13:58:11.983882 #5152] DEBUG -- : [23e405c4-3dc6-4085-92b8-f271dc5b6980] Date: Wed, 14 Nov 2018 13:58:10 +0100
+From: from@example.com
+To: salimboumediene@gmail.com
+Message-ID: <5bec1be229884_14202af312b741042162@salim.mail>
+Subject: sujet de test
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5bec1be226a08_14202af312b7410420aa";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5bec1be226a08_14202af312b7410420aa
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour, comment allez vous aujourd'hui?=0D
+=0D
+Voici les r=C3=A9actions des potins de la semaine...=0D
+=0D
+Bon potins sur The Gossip Potins.=0D
+
+----==_mimepart_5bec1be226a08_14202af312b7410420aa
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    
+  </body>
+</html>
+
+----==_mimepart_5bec1be226a08_14202af312b7410420aa--
+
+I, [2018-11-14T13:58:11.984536 #5152]  INFO -- : [23e405c4-3dc6-4085-92b8-f271dc5b6980] Completed 500 Internal Server Error in 2975ms
+F, [2018-11-14T13:58:11.989510 #5152] FATAL -- : [23e405c4-3dc6-4085-92b8-f271dc5b6980]   
+F, [2018-11-14T13:58:11.989869 #5152] FATAL -- : [23e405c4-3dc6-4085-92b8-f271dc5b6980] Net::SMTPAuthenticationError (534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbv6
+):
+F, [2018-11-14T13:58:11.990043 #5152] FATAL -- : [23e405c4-3dc6-4085-92b8-f271dc5b6980]   
+F, [2018-11-14T13:58:11.990215 #5152] FATAL -- : [23e405c4-3dc6-4085-92b8-f271dc5b6980] app/services/mail_chimp.rb:16:in `block (3 levels) in get_list'
+[23e405c4-3dc6-4085-92b8-f271dc5b6980] app/services/mail_chimp.rb:14:in `each'
+[23e405c4-3dc6-4085-92b8-f271dc5b6980] app/services/mail_chimp.rb:14:in `block (2 levels) in get_list'
+[23e405c4-3dc6-4085-92b8-f271dc5b6980] app/services/mail_chimp.rb:13:in `each'
+[23e405c4-3dc6-4085-92b8-f271dc5b6980] app/services/mail_chimp.rb:13:in `block in get_list'
+[23e405c4-3dc6-4085-92b8-f271dc5b6980] app/services/mail_chimp.rb:11:in `each'
+[23e405c4-3dc6-4085-92b8-f271dc5b6980] app/services/mail_chimp.rb:11:in `get_list'
+[23e405c4-3dc6-4085-92b8-f271dc5b6980] app/controllers/home_controller.rb:4:in `index'
+I, [2018-11-14T13:58:12.053471 #5152]  INFO -- : [8ef7c9c4-d376-4fc6-9c77-efe3dfad123a] Started GET "/favicon.ico" for 127.0.0.1 at 2018-11-14 13:58:12 +0100
+F, [2018-11-14T13:58:12.054620 #5152] FATAL -- : [8ef7c9c4-d376-4fc6-9c77-efe3dfad123a]   
+F, [2018-11-14T13:58:12.054726 #5152] FATAL -- : [8ef7c9c4-d376-4fc6-9c77-efe3dfad123a] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2018-11-14T13:58:12.054762 #5152] FATAL -- : [8ef7c9c4-d376-4fc6-9c77-efe3dfad123a]   
+F, [2018-11-14T13:58:12.054799 #5152] FATAL -- : [8ef7c9c4-d376-4fc6-9c77-efe3dfad123a] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[8ef7c9c4-d376-4fc6-9c77-efe3dfad123a] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[8ef7c9c4-d376-4fc6-9c77-efe3dfad123a] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[8ef7c9c4-d376-4fc6-9c77-efe3dfad123a] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[8ef7c9c4-d376-4fc6-9c77-efe3dfad123a] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[8ef7c9c4-d376-4fc6-9c77-efe3dfad123a] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[8ef7c9c4-d376-4fc6-9c77-efe3dfad123a] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[8ef7c9c4-d376-4fc6-9c77-efe3dfad123a] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[8ef7c9c4-d376-4fc6-9c77-efe3dfad123a] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[8ef7c9c4-d376-4fc6-9c77-efe3dfad123a] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[8ef7c9c4-d376-4fc6-9c77-efe3dfad123a] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[8ef7c9c4-d376-4fc6-9c77-efe3dfad123a] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[8ef7c9c4-d376-4fc6-9c77-efe3dfad123a] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[8ef7c9c4-d376-4fc6-9c77-efe3dfad123a] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[8ef7c9c4-d376-4fc6-9c77-efe3dfad123a] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[8ef7c9c4-d376-4fc6-9c77-efe3dfad123a] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[8ef7c9c4-d376-4fc6-9c77-efe3dfad123a] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[8ef7c9c4-d376-4fc6-9c77-efe3dfad123a] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[8ef7c9c4-d376-4fc6-9c77-efe3dfad123a] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[8ef7c9c4-d376-4fc6-9c77-efe3dfad123a] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[8ef7c9c4-d376-4fc6-9c77-efe3dfad123a] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+I, [2018-11-14T13:59:10.694253 #5152]  INFO -- : [f1de62f0-09c6-4ec9-949d-2fb4a21a9f4b] Started GET "/" for 127.0.0.1 at 2018-11-14 13:59:10 +0100
+I, [2018-11-14T13:59:10.697898 #5152]  INFO -- : [f1de62f0-09c6-4ec9-949d-2fb4a21a9f4b] Processing by HomeController#index as HTML
+I, [2018-11-14T13:59:12.000318 #5152]  INFO -- : [f1de62f0-09c6-4ec9-949d-2fb4a21a9f4b]   Rendering contact_mailer/contact.html.erb within layouts/mailer
+I, [2018-11-14T13:59:12.000932 #5152]  INFO -- : [f1de62f0-09c6-4ec9-949d-2fb4a21a9f4b]   Rendered contact_mailer/contact.html.erb within layouts/mailer (0.2ms)
+I, [2018-11-14T13:59:12.003076 #5152]  INFO -- : [f1de62f0-09c6-4ec9-949d-2fb4a21a9f4b]   Rendering contact_mailer/contact.text.erb within layouts/mailer
+I, [2018-11-14T13:59:12.003466 #5152]  INFO -- : [f1de62f0-09c6-4ec9-949d-2fb4a21a9f4b]   Rendered contact_mailer/contact.text.erb within layouts/mailer (0.1ms)
+D, [2018-11-14T13:59:12.011221 #5152] DEBUG -- : [f1de62f0-09c6-4ec9-949d-2fb4a21a9f4b] ContactMailer#contact: processed outbound mail in 12.2ms
+I, [2018-11-14T13:59:13.224144 #5152]  INFO -- : [f1de62f0-09c6-4ec9-949d-2fb4a21a9f4b] Sent mail to salimboumediene@gmail.com (1212.5ms)
+D, [2018-11-14T13:59:13.224399 #5152] DEBUG -- : [f1de62f0-09c6-4ec9-949d-2fb4a21a9f4b] Date: Wed, 14 Nov 2018 13:59:12 +0100
+From: from@example.com
+To: salimboumediene@gmail.com
+Message-ID: <5bec1c2039cc_14202af312b69f882311@salim.mail>
+Subject: sujet de test
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5bec1c2012ca_14202af312b69f8822ad";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5bec1c2012ca_14202af312b69f8822ad
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour, comment allez vous aujourd'hui?=0D
+=0D
+Voici les r=C3=A9actions des potins de la semaine...=0D
+=0D
+Bon potins sur The Gossip Potins.=0D
+
+----==_mimepart_5bec1c2012ca_14202af312b69f8822ad
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    
+  </body>
+</html>
+
+----==_mimepart_5bec1c2012ca_14202af312b69f8822ad--
+
+I, [2018-11-14T13:59:13.224887 #5152]  INFO -- : [f1de62f0-09c6-4ec9-949d-2fb4a21a9f4b] Completed 500 Internal Server Error in 2527ms
+F, [2018-11-14T13:59:13.228964 #5152] FATAL -- : [f1de62f0-09c6-4ec9-949d-2fb4a21a9f4b]   
+F, [2018-11-14T13:59:13.229251 #5152] FATAL -- : [f1de62f0-09c6-4ec9-949d-2fb4a21a9f4b] Net::SMTPAuthenticationError (534-5.7.14 <https://accounts.google.com/signin/continue?sarp=1&scc=1&plt=AKgnsbtG
+):
+F, [2018-11-14T13:59:13.229361 #5152] FATAL -- : [f1de62f0-09c6-4ec9-949d-2fb4a21a9f4b]   
+F, [2018-11-14T13:59:13.229464 #5152] FATAL -- : [f1de62f0-09c6-4ec9-949d-2fb4a21a9f4b] app/services/mail_chimp.rb:16:in `block (3 levels) in get_list'
+[f1de62f0-09c6-4ec9-949d-2fb4a21a9f4b] app/services/mail_chimp.rb:14:in `each'
+[f1de62f0-09c6-4ec9-949d-2fb4a21a9f4b] app/services/mail_chimp.rb:14:in `block (2 levels) in get_list'
+[f1de62f0-09c6-4ec9-949d-2fb4a21a9f4b] app/services/mail_chimp.rb:13:in `each'
+[f1de62f0-09c6-4ec9-949d-2fb4a21a9f4b] app/services/mail_chimp.rb:13:in `block in get_list'
+[f1de62f0-09c6-4ec9-949d-2fb4a21a9f4b] app/services/mail_chimp.rb:11:in `each'
+[f1de62f0-09c6-4ec9-949d-2fb4a21a9f4b] app/services/mail_chimp.rb:11:in `get_list'
+[f1de62f0-09c6-4ec9-949d-2fb4a21a9f4b] app/controllers/home_controller.rb:4:in `index'
+I, [2018-11-14T13:59:13.286553 #5152]  INFO -- : [363cc961-98e6-442b-af42-5809705fa099] Started GET "/favicon.ico" for 127.0.0.1 at 2018-11-14 13:59:13 +0100
+F, [2018-11-14T13:59:13.287777 #5152] FATAL -- : [363cc961-98e6-442b-af42-5809705fa099]   
+F, [2018-11-14T13:59:13.287920 #5152] FATAL -- : [363cc961-98e6-442b-af42-5809705fa099] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2018-11-14T13:59:13.287970 #5152] FATAL -- : [363cc961-98e6-442b-af42-5809705fa099]   
+F, [2018-11-14T13:59:13.288015 #5152] FATAL -- : [363cc961-98e6-442b-af42-5809705fa099] actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+[363cc961-98e6-442b-af42-5809705fa099] actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[363cc961-98e6-442b-af42-5809705fa099] railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+[363cc961-98e6-442b-af42-5809705fa099] railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+[363cc961-98e6-442b-af42-5809705fa099] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+[363cc961-98e6-442b-af42-5809705fa099] activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+[363cc961-98e6-442b-af42-5809705fa099] activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+[363cc961-98e6-442b-af42-5809705fa099] railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+[363cc961-98e6-442b-af42-5809705fa099] actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[363cc961-98e6-442b-af42-5809705fa099] actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[363cc961-98e6-442b-af42-5809705fa099] rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+[363cc961-98e6-442b-af42-5809705fa099] rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+[363cc961-98e6-442b-af42-5809705fa099] activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[363cc961-98e6-442b-af42-5809705fa099] actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[363cc961-98e6-442b-af42-5809705fa099] rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+[363cc961-98e6-442b-af42-5809705fa099] railties (5.2.1) lib/rails/engine.rb:524:in `call'
+[363cc961-98e6-442b-af42-5809705fa099] puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+[363cc961-98e6-442b-af42-5809705fa099] puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+[363cc961-98e6-442b-af42-5809705fa099] puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+[363cc961-98e6-442b-af42-5809705fa099] puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+[363cc961-98e6-442b-af42-5809705fa099] puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'

@@ -1,0 +1,24 @@
+@import "variables/personal_variables";
+
+.image-banner{
+    width:100%;
+    height: 440px;
+}
+
+@import "components/*";
+@import "variables/*"; 
+
+.mdl-layout__drawer{
+    background: linear-gradient(360deg, rgb(19, 172, 78), rgb(18, 250, 250), #A6FFCB)!important;
+}
+
+.image-title{
+    position:relative;
+    height: 50px;
+}
+
+h1{
+    font-family: $title_fonts !important;
+}
+#card-form{
+}
